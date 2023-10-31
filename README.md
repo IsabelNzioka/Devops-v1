@@ -37,6 +37,7 @@
 
 
 ### Integrate Jenkins with github
+#####  Configure Jenkins to detect pushes to a GitHub repository automatically, 
 <!--  ->
  
  
