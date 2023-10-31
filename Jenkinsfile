@@ -11,9 +11,6 @@ pipeline {
 
         stage('Test') {
             steps {
-                // Install Python (adjust version if needed)
-                sh 'apt-get update && apt-get install -y python3'
-
                 // Install project dependencies (if any)
                 sh 'pip install -r requirements.txt'  // If you have a requirements.txt file
 
