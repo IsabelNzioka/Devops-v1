@@ -11,7 +11,7 @@ def test_deleteshfiles(run_deleteshfiles_script):
     for root, _, files in os.walk("."):
         for file in files:
             if file.endswith(".sh"):
-                assert not os.path.exists(os.path.join(root, file)), f"File {file} was not deleted"
+                assert not os.path.exists(os.path.join(root, file)), "File {} was not deleted".format(file)
                 found_unexpected_files = True
 
     if not found_unexpected_files:
